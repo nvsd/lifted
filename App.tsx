@@ -1,6 +1,5 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { NativeBaseProvider } from "native-base";
+import { NativeBaseProvider, theme } from "native-base";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import useCachedResources from "./hooks/useCachedResources";
@@ -13,9 +12,8 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <NativeBaseProvider>
+      <NativeBaseProvider theme={theme}>
         <Navigation />
-        <StatusBar />
       </NativeBaseProvider>
     </SafeAreaProvider>
   );

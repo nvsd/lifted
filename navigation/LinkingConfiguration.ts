@@ -9,7 +9,7 @@ export const linking: LinkingOptions<RootStackParamList> = {
     screens: {
       Root: {
         screens: {
-          TabOne: {
+          Dashboard: {
             screens: {
               TabOneScreen: "one",
             },
